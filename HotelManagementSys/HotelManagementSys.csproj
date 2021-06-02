@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E524E8A-0F45-4F6A-B3FE-02C4C6E017F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HotelManagementSys</RootNamespace>
+    <AssemblyName>HotelManagementSys</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commons.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNewCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewCategory.Designer.cs">
+      <DependentUpon>frmAddNewCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBar.Designer.cs">
+      <DependentUpon>frmBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBarReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBarReport.Designer.cs">
+      <DependentUpon>frmBarReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBooking.Designer.cs">
+      <DependentUpon>frmBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoice.Designer.cs">
+      <DependentUpon>frmInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKitchen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKitchen.Designer.cs">
+      <DependentUpon>frmKitchen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginDatails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginDatails.Designer.cs">
+      <DependentUpon>frmLoginDatails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMealIyemReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMealIyemReport.Designer.cs">
+      <DependentUpon>frmMealIyemReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPackageDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPackageDetails.Designer.cs">
+      <DependentUpon>frmPackageDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPool.Designer.cs">
+      <DependentUpon>frmPool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRooms.Designer.cs">
+      <DependentUpon>frmRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockDetails.Designer.cs">
+      <DependentUpon>frmStockDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockIssue.Designer.cs">
+      <DependentUpon>frmStockIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockOutReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockOutReport.Designer.cs">
+      <DependentUpon>frmStockOutReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateBooking.Designer.cs">
+      <DependentUpon>frmUpdateBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateStockDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateStockDetails.Designer.cs">
+      <DependentUpon>frmUpdateStockDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelHilroDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HotelHilroDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNewCategory.resx">
+      <DependentUpon>frmAddNewCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBar.resx">
+      <DependentUpon>frmBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBarReport.resx">
+      <DependentUpon>frmBarReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBooking.resx">
+      <DependentUpon>frmBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoice.resx">
+      <DependentUpon>frmInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKitchen.resx">
+      <DependentUpon>frmKitchen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginDatails.resx">
+      <DependentUpon>frmLoginDatails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMealIyemReport.resx">
+      <DependentUpon>frmMealIyemReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPackageDetails.resx">
+      <DependentUpon>frmPackageDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPool.resx">
+      <DependentUpon>frmPool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRooms.resx">
+      <DependentUpon>frmRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockDetails.resx">
+      <DependentUpon>frmStockDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockIssue.resx">
+      <DependentUpon>frmStockIssue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockOutReport.resx">
+      <DependentUpon>frmStockOutReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateBooking.resx">
+      <DependentUpon>frmUpdateBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateStockDetails.resx">
+      <DependentUpon>frmUpdateStockDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="HotelHilroDataSet.xsc">
+      <DependentUpon>HotelHilroDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HotelHilroDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HotelHilroDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HotelHilroDataSet.xss">
+      <DependentUpon>HotelHilroDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lady-gregory-hotel-reception-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HotelBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nav.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InvoiceIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InvoiceIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StockDetailsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomerDetails.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PackageDetails.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EmployeeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BarIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InvoiceNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InvoiceNew1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StockNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomerNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PackageNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EmployeeNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomsNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\powerPopup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoutNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackupNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_286553.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveAndUpdate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\businessman_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizeIconNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emplyee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\68-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\254032.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NormalPrinter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NormalPrinterSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StockIssure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StockIssureLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IssueNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IssueLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Statusmailtaskicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KitchenNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KitchenLighrt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomsNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomsLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BarNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoolNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoolLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hotelHilro.ico" />
+    <None Include="Resources\Logo copy1.png" />
+    <None Include="Resources\Logo copy.png" />
+    <None Include="Resources\Pool.jpg" />
+    <None Include="Resources\Image copy.jpg" />
+    <None Include="Resources\Image.jpg" />
+    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\bookingButton.png" />
+    <None Include="Resources\Booking.png" />
+    <None Include="Resources\WeddingLight.png" />
+    <None Include="Resources\WeddingNormal.png" />
+    <None Include="Resources\img_27761.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
